@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Mono:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.5em;
+
+}
+
+h2 {
+    font-size: 2.6em;
+
+}
+
+h3 {
+    font-size: 2em;
+
+}
+
+p {
+    font-size: 1em;
+}
+
+button {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: #ffa36d;
+}
+
+button:hover {
+    background-color: #c97b4d;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: #faaed1f8;
+}
+
+
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    color: #000000;
+    font-size: 1.3em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 35px;
+
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    color: blue;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 50vh;
+    background-image: linear-gradient(#ffffff, #e6e20d);
+
+}
+
+#hero h1 {
+    color: blueviolet;
+}
+
+#nuestrosproductos {
+    background-color: #98df27;
+    color: #401d77;
+    text-align: center;
+}
+
+#nuestrosproductos .container {
+    padding: 80px 52px;
+
+}
+
+#nuestrosproductos h2 {
+    margin-top: 0;
+    font-size: 3em;
+
+}
+
+#nuestrosproductos p {
+    display: none;
+
+}
+
+#nuestrosproductos .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+
+
+}
+
+.carta {
+    background-image: linear-gradient(#ffffff, #e6e20d);
+}
+
+footer {
+    background-color: #401d77;
+}
+
+footer p {
+    margin: 0;
+    padding: 15px;
+    color: red;
+}
+
+footer .container {
+    height: 200px;
+    display: flex;
+    justify-content: end;
+    align-items: space;
+}
+
+
+.formula {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 50vh;
+    background-image: linear-gradient(#ffffff, #e6e20d);
+}
+
+.form {
+    margin-top: 80px;
+    background-image: linear-gradient(#ffffff, #e6e20d);
+    border-radius: 20px;
+    padding: 0.5em 1.5em;
+
+}
+
+@media (min-width: 720px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestrosproductos h1 {
+        font-size: 5em;
+    }
+
+    #nuestrosproductos h2 {
+        margin-top: 0;
+    }
+
+    #nuestrosproductos .productos {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #nuestrosproductos p {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    #nuetrosproductos h3 {
+        margin-top: 0;
+    }
+
+    #nuestrosproductos .carta {
+        padding: 20px;
+    }
+
+    footer .container {
+        justify-content: flex-end;
+    }
+
+    .formula {
+        display: flex;
+        justify-content: center;
+    }
+}
